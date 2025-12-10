@@ -75,7 +75,7 @@
   </build>
   <distributionManagement>
         <repository>
-            <id>nexus-releases</id> <!-- Match this ID with the settings.xml -->
+            <id>nexus-snap</id> <!-- Match this ID with the settings.xml -->
             <url>http://16.171.150.122:8081/repository/java-packages/</url>
         </repository>
   </distributionManagement>
