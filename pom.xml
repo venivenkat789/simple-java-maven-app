@@ -5,7 +5,9 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <!-- CHANGED: release version -->
+  <version>1.0</version>
+
   <name>my-app</name>
   <url>https://maven.apache.org</url>
 
@@ -38,7 +40,6 @@
 
     <plugins>
       <plugin>
-        <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.5.0</version>
@@ -80,10 +81,9 @@
   </build>
 
   <distributionManagement>
-    <!-- SNAPSHOT repo for 1.0-SNAPSHOT builds -->
-    <snapshotRepository>
-      <id>nexus-snap</id> <!-- must match <server><id> in settings.xml -->
+    <repository>
+      <id>nexus-releases</id>
       <url>http://16.171.150.122:8081/repository/java-packages/</url>
-    </snapshotRepository>
+    </repository>
   </distributionManagement>
 </project>
