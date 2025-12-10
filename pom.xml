@@ -74,9 +74,9 @@
     </plugins>
   </build>
   <distributionManagement>
-        <repository>
+        <snapshotrepository>
             <id>nexus-snap</id> <!-- Match this ID with the settings.xml -->
             <url>http://16.171.150.122:8081/repository/java-packages/</url>
-        </repository>
+        </snapshotrepository>
   </distributionManagement>
 </project>
