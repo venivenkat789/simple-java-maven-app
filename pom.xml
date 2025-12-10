@@ -83,7 +83,7 @@
     <!-- SNAPSHOT repo for 1.0-SNAPSHOT builds -->
     <snapshotRepository>
       <id>nexus-snap</id> <!-- must match <server><id> in settings.xml -->
-      <url>http://16.171.150.122:8081/repository/java-snapshots/</url>
+      <url>http://16.171.150.122:8081/repository/java-packages/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
